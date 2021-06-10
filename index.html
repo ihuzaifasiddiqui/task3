@@ -3,29 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 11 | Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Huzaifa</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <header class="fheader">
       <nav>
-        <ul>
+        <ul class="topnav" id="dropdownclick" >
+         <li class="dropdownicon"> <a  href="javascript:void(0)" onclick="dropdown()">&#9776</a></li>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="https://github.com/ihuzaifasiddiqui" target="_blank">GitHub</a></li>
-          <li class="right"><a href="https://www.instagram.com/ihuzaifasiddiqui/"target="_blank" class="button">Contact</a></li>
+          <li class="right"><a href="#contact" class="button">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
         </ul>
       </nav>
       <div class="container">
         <h1>Hi there !</h1>
         <p class="this">This is Huzaifa</p>
         <p class="content">I'm a Frontend Web Developer</p>
-        <br /><br /><br />
+        <br /><br /><br>
         <a href="./resume.pdf" class="button" target="_blank">Resume</a>
       </div>
     </header>
-    <div class="container2">
+    <div class="container2" id="about">
       <section>
         <h1>About</h1>
         <p>
@@ -44,30 +46,43 @@
         Electronics engineering we all know <br> Software works but hardware rocks!!
         <br >
         Have a look on both Github and EC Projects Section. <br>
-        <a href=""https://github.com/ihuzaifasiddiqui" target="_blank"" class="button">GitHub</a>
-        <a href="#" class="button">EC Projects</a>
+        <a href=""https://github.com/ihuzaifasiddiqui" target="_blank" class="button">GitHub</a>
+        <a href="./projects.html" class="button" target="_blank">EC Projects</a>
       </p>
     </div>
-    <div class="container4">
+    <div class="container4" id="contact">
         <h1>Get in touch</h1>
         <section>
             <form action="https://www.instagram.com/ihuzaifasiddiqui/" >
                 <label for="name">Name</label><br>
-                <input type="text" name="username" id="name" placeholder="Enter your name" ><br>
+                <input type="text" name="username" id="name" placeholder="Enter your name" required ><br>
                 <label for="mail">Email</label><br>
-                <input type="email" name="mail" placeholder="Your email address"><br><br>
+                <input type="email" name="mail" placeholder="Your email address" required><br><br>
                 <textarea name="message" id="" cols="40" rows="4">Type your message here</textarea><br>
                 <input type="submit">
             </section><br>
         <div  >
             <div class="ig">
-                <img src="./ig-logo.png" alt="" width="100px"><br>
-                <a href="https://www.instagram.com/ihuzaifasiddiqui/" class="ig" target="_blank">Instagram</a></div>
+                <br>
+                <a href="https://www.instagram.com/ihuzaifasiddiqui/" class="ig" target="_blank"><img src="../images/ig-logo.png" alt="" width="100px"></a></div>
                 <div class="linkedin">
-                <img src="./linkedin.png" alt="" width="100px"><br>
-                <a href="" class="linkedin">linkedin</a>
+                <br>
+                <a href="https://www.linkedin.com/in/huzaifa-abdulwadoodsiddiqui-89924b1b7/" target="_blank" class="linkedin"><img src="../images/linkedin.png" alt="" width="100px"></a>
             </div>
         </div>
     </div>
+    <script>
+      function dropdown(){
+        var x = document.getElementById("dropdownclick");
+        if (x.className==="topnav"){
+          x.className+=" responsive";
+          console.log("navbar on")
+        }
+        else{
+          x.className = "topnav"
+          console.log("navbar gone")
+        }
+      }
+    </script>
   </body>
 </html>

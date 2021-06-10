@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+div.main{
+    background-image: url(../images/projects.png);
+    background-size: cover;
+    height: 700px;
+}
+div.main h1{
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+   padding: 50px;
+    color: azure;
+}
+body div.main div.container{
+    height: 180px;
+    background-color: azure;
+    border-radius: 25px;
+    margin: 50px 50px; 
+   
+}
+body div.main div.container p{
+    text-align: center;
+    float: left;
+    padding: 23px;
+    color: #307ab3;
+    width:80%;
+}
+div.main div.container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+img{
+    border-radius: 10px;
+    float: left;
+
+}
+div.main div.container::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+body div.main a.back{
+    text-decoration: none;
+    float: right;
+    padding: 0px 10px;
+    font-size: 85px;
+    line-height: 65px;
+    color: lightblue;
+    background-color: azure;
+    margin: 50px;
+    border-radius:50%;
+   
+}
+body div.main a.back:hover{
+    width: 70px;
+    background-color: rgba(114, 152, 250, 0.329);
+    border-radius:40%;
+    font-size: 95px;
+    color:azure;
+}
+    
+
+body div.main::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+/* responsive css */
+@media (max-width:500px) {
+    div.main{
+        background-image: url(../images/mobileprojects.png);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    div.main h1{
+        margin: 0px;
+        padding:10px;
+
+    }
+    body div.main div.container{
+        height: 60vh;
+        width: 90vw;
+        background-color: azure;
+        border-radius: 25px;
+        margin: 10px 10px; 
+        align-items: center;
+       
+    }
+    body div.main div.container img{
+       height: 18vh;
+       width: 90vw ;
+       
+    }
+    body div.main div.container p{
+        text-align: center;
+        float: none;
+        padding: 7px;
+      width: 90vw;
+    }
+}

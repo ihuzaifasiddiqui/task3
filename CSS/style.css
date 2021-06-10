@@ -10,14 +10,12 @@ body{
 }
 /*  top header*/
 header.fheader{
-    background-image: url(./Untitled\ design\ \(1\).gif);
+    background-image: url('../images/home.gif');
     background-size: cover;
     height: 700px;
 
 }
-/* li.right{
 
-} */
 header.fheader nav ul li{
     float:left;
     list-style: none;
@@ -26,6 +24,10 @@ header.fheader nav ul li{
     letter-spacing: 2px;
     color:#307ab3;
 }
+header.fheader nav ul.topnav li.dropdownicon{
+    display: none;
+}
+
 header.fheader nav ul li.right{
     float: right;
     list-style: none;
@@ -42,6 +44,7 @@ header.fheader nav ul li a.button{
     padding: 10px;
     border-radius: 20px;
     text-decoration: none;
+    margin-top: 40px;
 
 }
 header.fheader nav ul li a{
@@ -57,12 +60,8 @@ header.fheader nav ul li a:hover{
 header.fheader nav ul li a:active{
     color:lightblue
 }
-header.fheader nav ul li a:active{
-    color:#307ab3;
-}
-header.fheader nav ul li a:link{
-    color:#307ab3;
-}
+
+
 
 div.container{
    
@@ -97,7 +96,7 @@ div.container a.button{
         background-color: azure;
     }
     div.container2{
-        background-image: url(./Untitled\ design\ \(2\).gif);
+        background-image: url('../images/about.gif');
         background-size:cover;
         height:700px;
 
@@ -113,6 +112,7 @@ div.container a.button{
     div.container2 section h1{
         font-size: 50px;
         padding: 10px;
+        color: #c1dff6;
     }
     div.container2 section p{
         font-size: 22px;
@@ -120,7 +120,7 @@ div.container a.button{
     }
 
     div.container3{
-        background-image: url(./whyme.png);
+        background-image: url('../images/whyme.png');
         background-size:cover;
          height:700px;
 
@@ -157,7 +157,7 @@ div.container a.button{
 
     }
     div.container4{
-        background-image: url(./getintouch.gif);
+        background-image: url(../images/getintouch.gif);
         background-size:cover;
          height:700px;
 
@@ -198,8 +198,9 @@ div.container a.button{
     }
     div.container4 div.ig{
         float: right;
-      padding:  30px 30px 20px 30px;
+      padding:  20px 30px 20px 30px;
       margin-right: 80px;
+      margin-bottom: 20px;
       background-color:rgb(251, 251, 251);
       border: rgb(231, 245, 250) solid 3px;
       border-radius: 10px;
@@ -209,11 +210,12 @@ div.container a.button{
     }
     div.container4 div.linkedin{
         float: right;
-        padding: 30px 30px 20px 30px;
+        padding: 20px 30px 20px 30px;
         background-color:rgb(251, 251, 251);
       border: rgb(231, 245, 250) solid 3px;
         border-radius: 10px;
         margin-right :20px;
+        margin-bottom: 20px;
         text-align: center;
     }
     div.container4 div.ig:hover{
@@ -242,4 +244,127 @@ div.container a.button{
         text-decoration: none;
         text-align: center;
     }
-    
+    /*responsive CSS*/
+    @media (max-width:500px){
+        header.fheader nav ul li {
+            display: none;
+        }
+        header.fheader nav ul.topnav li.dropdownicon{
+            display: block;
+            position: absolute;
+            font-size: 35px;
+            padding: 10px;
+            color: #307ab3;
+        }
+        
+       header.fheader nav ul.topnav.responsive{
+        display:block ;   
+        position: absolute;
+           background-color:#70b1e2;
+
+           width: 100vw;
+           height: 50vh;
+           padding: 10px;
+           float: none;
+           color: azure;
+
+       }
+       header.fheader nav ul.topnav.responsive li{
+           display: block;
+           float: none;
+           text-align: center;
+           font-weight: bold;
+       }
+      
+       header.fheader{
+           margin: 0px;
+       
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../images/mobilehome.gif);
+
+       }
+
+       div.container{
+           margin: 0px;
+           padding:50px 0px 0px 40px;
+       }
+        div.container2{
+            background-image: url(../images/mobileabout.gif);
+            height: 100vh;
+            width: 100vw;
+        }
+        div.container2 h1, div.container2 p {
+            text-align: left;
+            padding-left: 20px;
+            
+          
+        }
+        div.container2 section{
+            padding-top: 20px;
+          
+        }
+        div.container2 section h1{
+            font-size: 70px;
+           
+        }
+        div.container3{
+            background-image: url(../images/mobilewhyme.png);
+            height: 100vh;
+            width: 100vw;
+        }
+        div.container3 h1{
+          margin: 20px 0px 0px 20px;
+          font-size: 70px;
+        }
+        div.container3 p{
+            padding:5px 0px 0px 5px;
+            margin: 0px;
+            font-size: 20px;
+        }
+        div.container3 p a.button{
+            padding: 4px;
+
+        }
+        div.container4{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(../images/mobilecontact.gif);
+        }
+        div.container4 form{
+            margin: 0px;
+            width: 80vw;
+        }
+        div.container4 h1{
+           
+            line-height: 70px;
+            padding-left: 20px;
+            margin-top: 0px ;
+            margin-left:0px;
+           
+        }
+        div.ig,div.linkedin{
+            display: none;
+        }
+        div.container4 section{
+            width: 100vw;
+            align-items: center;
+            padding-left: 20px;
+        }
+        div.container4 form input{
+            width: 90vw;
+            padding: 8px;
+            text-align: left;
+            
+        }
+        div.container4 form input[type="submit"]{
+            text-align: center;
+
+        }
+        div.container4 form textarea{
+            width: 90vw;
+            padding: 8px;
+            text-align: left;}
+            
+        
+    }
