@@ -16,7 +16,7 @@ header.fheader{
 
 }
 
-header.fheader nav ul li{
+header.fheader nav ul li {
     float:left;
     list-style: none;
     font-size: 25px;
@@ -295,6 +295,7 @@ div.container a.button{
             width: 100vw;
         }
         div.container2 h1, div.container2 p {
+           
             text-align: left;
             padding-left: 20px;
             
@@ -309,6 +310,7 @@ div.container a.button{
            
         }
         div.container3{
+            position: absolute;
             background-image: url(../images/mobilewhyme.png);
             height: 100vh;
             width: 100vw;
@@ -327,6 +329,7 @@ div.container a.button{
 
         }
         div.container4{
+            position: absolute;
             height: 100vh;
             width: 100vw;
             background-image: url(../images/mobilecontact.gif);
