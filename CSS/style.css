@@ -303,6 +303,7 @@ div.container a.button{
         }
         div.container2 section{
             padding-top: 20px;
+            margin: 0px;
           
         }
         div.container2 section h1{
@@ -315,11 +316,11 @@ div.container a.button{
             width: 100vw;
         }
         div.container3 h1{
-          margin: 20px 0px 0px 20px;
+          margin: 10px 0px 0px 20px;
           font-size: 70px;
         }
         div.container3 p{
-            padding:5px 0px 0px 5px;
+            padding:5px 10px 0px 10px;
             margin: 0px;
             font-size: 20px;
         }
